@@ -1,6 +1,4 @@
-# GronnFalk Documentation
-
-![GronnFalk Logo](favicon3.png)
+<h1>GronnFalk Documentation <img src="favicon3.png" alt="GronnFalk Logo" width="40" style="vertical-align: middle;"></h1>
 
 **The simple soap search.**
 
