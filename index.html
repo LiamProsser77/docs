@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,16 +32,16 @@
 </p>
 
 <p>
-    <a href="https://img.shields.io/badge/Docker-Supported-2496ED?logo=docker&logoColor=white">
+    <a href="https://www.docker.com/">
         <img src="https://img.shields.io/badge/Docker-Supported-2496ED?logo=docker&logoColor=white" alt="Docker Supported">
     </a>
     <a href="https://render.com/">
-        <img src="https://img.shields.io/badge/Render-Supported-46E3B7?logo=render&logoColor=black" alt="Render">
+        <img src="https://img.shields.io/badge/Render-Supported-46E3B7?logo=render&logoColor=black" alt="Render Supported">
     </a>
     <a href="https://railway.com/">
-        <img src="https://img.shields.io/badge/Railway-Supported-8B5CF6?logo=railway&logoColor=white" alt="Railway">
+        <img src="https://img.shields.io/badge/Railway-Supported-8B5CF6?logo=railway&logoColor=white" alt="Railway Supported">
     </a>
-    <img src="https://img.shields.io/badge/PHP-Compatible-777BB4?logo=php&logoColor=white" alt="PHP">
+    <img src="https://img.shields.io/badge/PHP-Compatible-777BB4?logo=php&logoColor=white" alt="PHP Compatible">
 </p>
 
 <hr>
@@ -50,6 +51,7 @@
 <ul>
     <li><a href="#about">About GronnFalk</a></li>
     <li><a href="#sources">Search Sources</a></li>
+    <li><a href="#instances">GronnFalk Instances</a></li>
     <li><a href="#install">Installation</a></li>
     <li><a href="#linux">Linux</a></li>
     <li><a href="#php">PHP</a></li>
@@ -78,9 +80,7 @@
     search sources instead of maintaining its own web index.
 </p>
 
-<p>
-    GronnFalk is not a fork of SearXNG.
-</p>
+<p>GronnFalk is not a fork of SearXNG.</p>
 
 <p>
     The name is inspired by Norwegian-style naming. In English,
@@ -110,6 +110,32 @@
 
 <hr>
 
+<h2 id="instances">GronnFalk Instances</h2>
+
+<p>Try one of these GronnFalk instances:</p>
+
+<ul>
+    <li>
+        <a href="https://gronnfalk-space.onrender.com/index.html">
+            GronnFalk on Render
+        </a>
+    </li>
+    <li>
+        <a href="https://liamprosser77.github.io/gronnfalk/">
+            GronnFalk on GitHub Pages
+        </a>
+    </li>
+</ul>
+
+<p>
+    Find more instances or learn how to create your own on the
+    <a href="https://liamprosser77.github.io/gronnfalk-instances/">
+        GronnFalk Instances website
+    </a>.
+</p>
+
+<hr>
+
 <h2 id="install">Installation</h2>
 
 <p>
@@ -119,7 +145,7 @@
 
 <p>
     <a href="https://github.com/LiamProsser77/gronnfalk">
-        Download the GronnFalk source code
+        Get the GronnFalk source code
     </a>
 </p>
 
@@ -136,7 +162,7 @@
     <li>PHP, if running a PHP component</li>
 </ul>
 
-<h3>1. Install Git, Node.js, npm, and PHP</h3>
+<h3>1. Install the required software</h3>
 
 <p>On Ubuntu or Linux Mint:</p>
 
@@ -157,45 +183,42 @@ cd gronnfalk</code></pre>
 <pre><code>npm start</code></pre>
 
 <p>
-    This command applies to the Node.js API if the repository's
-    package.json defines the start script.
+    This command requires the repository's package.json to define
+    a working start script.
 </p>
 
 <h3>5. Start a static frontend server</h3>
 
 <pre><code>python3 -m http.server 8080</code></pre>
 
-<p>Open <code>http://localhost:8080</code> in your browser.</p>
+<p>Open <a href="http://localhost:8080">http://localhost:8080</a>.</p>
 
-<p>
-    Configure the frontend to use the correct API URL.
-</p>
+<p>Configure the frontend to use the correct API URL.</p>
 
 <hr>
 
 <h2 id="php">PHP</h2>
 
 <p>
-    PHP can be used to serve dynamic web pages or build a backend.
-    A PHP installation alone does not automatically convert GronnFalk's
-    existing Node.js API into PHP.
+    PHP can serve dynamic web pages and run PHP-based backends.
+    Installing PHP does not automatically convert the existing
+    Node.js API into PHP.
 </p>
 
 <h3>Run a PHP website locally</h3>
 
 <p>
-    If your instance contains an <code>index.php</code> file, install PHP
-    and start the built-in development server:
+    If your instance contains an index.php file, run:
 </p>
 
 <pre><code>php -S localhost:8080</code></pre>
 
-<p>Open <code>http://localhost:8080</code>.</p>
+<p>Open <a href="http://localhost:8080">http://localhost:8080</a>.</p>
 
 <p>
-    For a production instance, configure a suitable PHP server or container.
-    If your deployment uses the Node.js API, keep that API running as well
-    unless you have replaced it with a working PHP implementation.
+    For production, configure a suitable PHP server or Docker image.
+    If your instance still uses the Node.js API, that API must also
+    be running.
 </p>
 
 <hr>
@@ -203,14 +226,12 @@ cd gronnfalk</code></pre>
 <h2 id="docker">Docker Installation</h2>
 
 <p>
-    <a href="https://img.shields.io/badge/Docker-Supported-2496ED?logo=docker&logoColor=white">
+    <a href="https://www.docker.com/">
         <img src="https://img.shields.io/badge/Docker-Supported-2496ED?logo=docker&logoColor=white" alt="Docker Supported">
     </a>
 </p>
 
-<p>
-    Docker lets you package and run an instance in a container.
-</p>
+<p>Docker lets you package and run an instance in a container.</p>
 
 <p>
     <a href="https://hub.docker.com/repository/docker/liamprosser77/gronnfalk/general">
@@ -222,7 +243,7 @@ cd gronnfalk</code></pre>
 
 <ul>
     <li>Docker</li>
-    <li>Docker Compose</li>
+    <li>Docker Compose, if using a Compose file</li>
     <li>GronnFalk source code</li>
 </ul>
 
@@ -236,7 +257,8 @@ cd gronnfalk</code></pre>
 <pre><code>docker compose up -d --build</code></pre>
 
 <p>
-    If your Docker Compose file maps port 8080, visit:
+    If the repository includes a suitable Docker Compose file and maps
+    port 8080, open:
 </p>
 
 <pre><code>http://localhost:8080</code></pre>
@@ -251,10 +273,9 @@ cd gronnfalk</code></pre>
 docker compose up -d --build</code></pre>
 
 <p>
-    The Dockerfile defines how the image is built. The
-    <code>docker-compose.yml</code> file can configure how the services
-    run. These files must exist in your repository for the commands above
-    to work as written.
+    The Dockerfile describes how to build the container image.
+    A docker-compose.yml file can configure and start the services.
+    The files and required settings must exist for these commands to work.
 </p>
 
 <hr>
@@ -268,7 +289,7 @@ docker compose up -d --build</code></pre>
 </p>
 
 <p>
-    <a href="https://img.shields.io/badge/Render-Supported-46E3B7?logo=render&logoColor=black">
+    <a href="https://render.com/">
         <img src="https://img.shields.io/badge/Render-Supported-46E3B7?logo=render&logoColor=black" alt="Render Supported">
     </a>
 </p>
@@ -278,24 +299,24 @@ docker compose up -d --build</code></pre>
 <ol>
     <li>Create an account at <a href="https://render.com/">Render</a>.</li>
     <li>Connect your GitHub account.</li>
-    <li>Choose the GronnFalk repository.</li>
+    <li>Select the GronnFalk repository.</li>
     <li>Create a new Web Service, or use the deploy link above.</li>
-    <li>Select Docker if you want Render to build using the repository's Dockerfile.</li>
+    <li>Select Docker if you want to build using the repository's Dockerfile.</li>
     <li>Configure environment variables and the service port as needed.</li>
     <li>Start the deployment.</li>
-    <li>Wait for the build and deployment to finish.</li>
+    <li>Wait for the build to finish.</li>
     <li>Open the URL provided by Render.</li>
 </ol>
 
 <p>
-    If using a native PHP deployment, configure a suitable PHP runtime
-    or Docker image. If using the Node.js API, use the appropriate
-    Node.js start command instead.
+    Make sure the deployment uses a supported runtime and the correct
+    start command. For PHP, configure a compatible PHP runtime or Docker
+    image. For the Node.js API, use the appropriate Node.js command.
 </p>
 
 <p>
-    Render free services may sleep when idle, depending on the service type
-    and current plan.
+    Render free services may sleep when idle, depending on the service
+    type and current plan.
 </p>
 
 <hr>
@@ -303,34 +324,31 @@ docker compose up -d --build</code></pre>
 <h2 id="railway">Create a Railway Instance</h2>
 
 <p>
-    <a href="https://img.shields.io/badge/Railway-Supported-8B5CF6?logo=railway&logoColor=white">
+    <a href="https://railway.com/">
         <img src="https://img.shields.io/badge/Railway-Supported-8B5CF6?logo=railway&logoColor=white" alt="Railway Supported">
     </a>
 </p>
 
-<p>
-    <a href="https://railway.com/">Open Railway</a>
-</p>
+<p><a href="https://railway.com/">Open Railway</a></p>
 
 <h3>Instructions</h3>
 
 <ol>
     <li>Create a Railway account.</li>
     <li>Create a new project.</li>
-    <li>Select the option to deploy from a GitHub repository.</li>
-    <li>Choose <code>LiamProsser77/gronnfalk</code>.</li>
+    <li>Choose deployment from a GitHub repository.</li>
+    <li>Select <code>LiamProsser77/gronnfalk</code>.</li>
     <li>Configure the deployment to use the Dockerfile if desired.</li>
     <li>Configure the required environment variables and port.</li>
     <li>Deploy the service.</li>
     <li>Open the service's networking settings.</li>
     <li>Generate a public domain.</li>
-    <li>Visit the new instance.</li>
+    <li>Visit your new instance.</li>
 </ol>
 
 <p>
-    For PHP, use a compatible PHP runtime or a Docker image configured
-    to run PHP. For the existing Node.js API, configure the Node.js
-    start command and any required settings.
+    For PHP, use a compatible PHP runtime or Docker image. For the
+    Node.js API, configure the appropriate start command and settings.
 </p>
 
 <hr>
@@ -346,7 +364,7 @@ docker compose up -d --build</code></pre>
     <li>Fork the GronnFalk repository.</li>
     <li>Open the repository's Settings.</li>
     <li>Select Pages.</li>
-    <li>Choose Deploy from a branch.</li>
+    <li>Choose deployment from a branch.</li>
     <li>Select the main branch and the correct folder.</li>
     <li>Save the settings.</li>
     <li>Wait for the website to publish.</li>
@@ -388,7 +406,7 @@ docker compose up -d --build</code></pre>
     <li>GronnFalk aims to avoid unnecessary tracking.</li>
     <li>The project is open source.</li>
     <li>GronnFalk does not maintain its own web index.</li>
-    <li>External providers may receive queries sent to them.</li>
+    <li>External search providers may receive queries sent to them.</li>
 </ul>
 
 <p>
@@ -406,11 +424,15 @@ docker compose up -d --build</code></pre>
 </p>
 
 <p>
-    <a href="https://github.com/LiamProsser77/gronnfalk/issues">Report an issue</a>
+    <a href="https://github.com/LiamProsser77/gronnfalk/issues">
+        Report an issue
+    </a>
 </p>
 
 <p>
-    <a href="https://github.com/LiamProsser77/gronnfalk/pulls">View pull requests</a>
+    <a href="https://github.com/LiamProsser77/gronnfalk/pulls">
+        View pull requests
+    </a>
 </p>
 
 <hr>
@@ -424,8 +446,8 @@ docker compose up -d --build</code></pre>
 </p>
 
 <p>
-    <a href="https://github.com/LiamProsser77/gronnfalk-instances">
-        GronnFalk Instances
+    <a href="https://liamprosser77.github.io/gronnfalk-instances/">
+        Visit the GronnFalk Instances website
     </a>
 </p>
 
@@ -433,9 +455,7 @@ docker compose up -d --build</code></pre>
 
 <h2 id="license">License</h2>
 
-<p>
-    GronnFalk is licensed under the Apache License 2.0.
-</p>
+<p>GronnFalk is licensed under the Apache License 2.0.</p>
 
 <p>
     <a href="https://www.apache.org/licenses/LICENSE-2.0.html">
