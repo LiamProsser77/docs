@@ -59,6 +59,7 @@ Search sources associated with GronnFalk include:
 - [DuckDuckGo](https://duckduckgo.com/)
 - [Brave Search](https://search.brave.com/)
 - [Google](https://google.com/)
+- [Degoog](https://degoog.org)
 
 Available sources depend on the instance configuration.
 
