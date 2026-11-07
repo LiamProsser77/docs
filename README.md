@@ -60,6 +60,7 @@ Search sources associated with GronnFalk include:
 - [Brave Search](https://search.brave.com/)
 - [Google](https://google.com/)
 - [Degoog](https://degoog.org)
+- [Mwmbl](https://mwmbl.org)
 
 Available sources depend on the instance configuration.
 
